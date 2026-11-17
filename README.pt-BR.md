@@ -217,7 +217,7 @@ Durante** desenvolvimento deste projeto fo**possível consolidar conhecimentos**
 **An**é Filipe dos Santos Reis**
 
 Estud**te de Engenharia de Software com **co em Desenvolvimento Back-end, P**hon, Java e Segurança Cibernética**
-**GitHub:** https://github.com/s**drefilipedev
+**GitHub:** https://github.com/sandrefilipedev
 
 **LinkedIn:** https**/linkedin.com/in/andrefilipedossa**osreis
 
