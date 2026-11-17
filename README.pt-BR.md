@@ -1,112 +1,118 @@
-# 📒 Agenda de Contatos em Python
+# 📖 Agenda de Contatos em Python
 
-## 📖 Sobre o Projeto
+## Visão Geral
 
-Este projeto consiste em uma aplicação simples desenvolvida em Python para gerenciamento e exibição de contatos.
+Este projeto consiste em uma aplicação desenvolvida em Python para gerenciamento de contatos através do terminal.
 
-A aplicação armazena informações utilizando estruturas de dados nativas da linguagem, permitindo organizar diferentes formas de contato, como telefone, e-mail, endereço e LinkedIn, de maneira flexível e escalável.
+A aplicação permite cadastrar, consultar, atualizar e remover contatos, além de gerenciar diferentes formas de comunicação, como telefone, e-mail e endereço.
 
-O objetivo principal foi praticar conceitos fundamentais de programação e manipulação de dados utilizando Python.
-
----
-
-## 🎯 Objetivo
-
-Desenvolver uma aplicação capaz de organizar e exibir informações de contatos de forma estruturada, reforçando conhecimentos em:
-
-- Estruturas de Dados
-- Funções
-- Manipulação de Dicionários
-- Tuplas
-- Laços de Repetição
-- Formatação de Saída
+O objetivo principal do projeto foi aplicar conceitos fundamentais de programação, estruturas de dados e organização de código, simulando funcionalidades encontradas em sistemas reais de gerenciamento de informações.
 
 ---
 
-## 💡 Problema Resolvido
+## Objetivo do Projeto
 
-Em muitas situações, um contato pode possuir múltiplas formas de comunicação, como vários telefones ou diferentes e-mails.
+Desenvolver uma solução simples e funcional para gerenciamento de contatos, utilizando apenas recursos nativos da linguagem Python.
 
-Este projeto resolve essa necessidade utilizando uma estrutura baseada em dicionários e listas, permitindo armazenar múltiplos meios de contato para uma mesma pessoa de forma organizada e de fácil consulta.
-
----
-
-## 🚀 Funcionalidades
-
-✅ Cadastro estruturado de contatos
-
-✅ Suporte para múltiplos telefones
-
-✅ Suporte para múltiplos e-mails
-
-✅ Inclusão de endereço
-
-✅ Inclusão de perfil do LinkedIn
-
-✅ Exibição formatada dos dados
-
-✅ Estrutura preparada para futura expansão
+Durante o desenvolvimento foram explorados conceitos importantes da engenharia de software, como modelagem de dados, reutilização de código, separação de responsabilidades e manipulação dinâmica de informações.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Problema Resolvido
+
+Na rotina pessoal e profissional, é comum que uma pessoa possua mais de um telefone, e-mail ou endereço.
+
+O projeto resolve esse cenário através de uma estrutura flexível que permite armazenar múltiplas formas de contato para cada pessoa, possibilitando consulta, atualização e exclusão de informações de maneira organizada.
+
+---
+
+## Funcionalidades
+
+✅ Cadastro de novos contatos
+
+✅ Inclusão de múltiplos telefones por contato
+
+✅ Inclusão de múltiplos e-mails por contato
+
+✅ Inclusão de endereços
+
+✅ Alteração do nome do contato
+
+✅ Atualização de informações existentes
+
+✅ Exclusão de contatos
+
+✅ Consulta individual de contatos
+
+✅ Exibição de toda a agenda formatada
+
+✅ Menu interativo via terminal
+
+---
+
+## Tecnologias Utilizadas
 
 - Python 3
-- Estruturas de Dados Nativas
-- Dicionários (`dict`)
-- Tuplas (`tuple`)
-- Listas (`list`)
-- Funções
-- Parâmetros Nomeados (`**kwargs`)
 
 ---
 
-## 🧠 Conceitos Aplicados
+## Conceitos Aplicados
 
-### Tuplas
+### Estruturas de Dados
 
-Utilizadas para armazenar os tipos de contato suportados pelo sistema:
+O projeto utiliza estruturas nativas do Python para armazenar e organizar informações.
+
+#### Tuplas
+
+Utilizadas para definir os tipos de contato suportados pelo sistema.
 
 ```python
 contatos_suportados = (
     "telefone",
     "email",
-    "endereco",
-    "linkedin"
+    "endereco"
 )
 ```
 
----
+#### Dicionários
 
-### Dicionários
-
-Utilizados para organizar os contatos e suas informações.
+Responsáveis pelo armazenamento dos contatos e suas informações.
 
 ```python
 agenda = {
-    "Pessoa 1": {
-        "telefone": ["11 1234-5678"],
-        "email": ["pessoa@email.com"]
+    "Nome": {
+        "telefone": [],
+        "email": [],
+        "endereco": []
     }
 }
 ```
 
+#### Listas
+
+Utilizadas para armazenar múltiplos valores para uma mesma forma de contato.
+
 ---
 
-### Funções
+### Programação Funcional
 
-O projeto utiliza funções para separar responsabilidades e facilitar a manutenção do código.
+O sistema foi dividido em funções específicas para cada responsabilidade:
 
-```python
-contato_para_texto()
-agenda_para_texto()
-```
+- Inclusão de contatos
+- Exclusão de contatos
+- Alteração de dados
+- Visualização de informações
+- Manipulação da agenda
+
+Essa abordagem facilita a manutenção e aumenta a legibilidade do código.
 
 ---
 
 ### Parâmetros Dinâmicos
 
-Utilização de `**kwargs` para receber quantidades variáveis de informações.
+Foi utilizada a estratégia de parâmetros dinâmicos com `**kwargs`, permitindo trabalhar com diferentes formas de contato sem necessidade de alterar a estrutura das funções.
+
+Exemplo:
 
 ```python
 def contato_para_texto(nome_contato, **formas_contato):
@@ -114,99 +120,107 @@ def contato_para_texto(nome_contato, **formas_contato):
 
 ---
 
-### Iteração sobre Estruturas de Dados
+### Ma**pulação de Dados
 
-Uso de laços para percorrer dicionários e listas.
+**projeto realiza operações complet** de**
+- Criação
+- Leitura
+-**tualização
+- Exclusão
 
-```python
-for meio_contato, contato in formas_contato**tems():
+Caracter**ando uma implementação prática do**onceito CRUD.
+
+---
+
+## Estrutura ** Projeto
+
+```text
+agenda-completa**│
+├** agenda.py
+├── README.md
+└── .git**nore
+```
+
+---
+
+## Como Executar
+
+**one o repositório:
+
+**`bash
+git clone https://github.com/sandrefilipedev/agenda_completa.git
+```
+
+Acesse a pasta do projeto**
+```bash
+cd agenda_completa
+``**
+Execute o programa:
+
+```bash
+pyt**n agenda**y
+```
+
+---
+
+## Exemplo de Util**ação
+
+```text
+1 - In**uir contato na agenda
+2 - Incluir**ma forma de contato
+3 - Alterar o**ome de um contato
+4 - Alterar uma**orma**e contato
+5 - Exibir um contato
+**- Exibir toda a agenda
+7 -**xcluir um contato
+8 - Sair
 **`
 
 ---
 
-## 📂 Estrutura do Projet***```text
-agenda-com**eta/
-│
-├── agenda.py
-**─ README.md
-```
+## Competências Demonstra**s
+
+Este**rojeto evidencia conhecimentos em**
+- Python
+- Estruturas de Dados
+**Dicionários
+- Tu**as
+- Listas
+- Funções
+**CRUD
+- Manipulação de**ados
+- Lógica de Programação
+**Tratamento de Flux**- Organização de Código** Resolução de Problemas
 
 ---
 
-## ▶**Como Executar
+## **ssíveis Evoluções**Como próximos**assos, o projeto pode ser**xpandido para incluir:
 
-Clone** repositório:
-
-```bash
-git clone**ttps://github.com/sandrefilipedev/agenda_completa.git
-```
-
-**esse a pasta do projeto:
-
-```bash*** agenda_completa
-```
-
-Execute a a**icação:
-
-```bash
-python agenda.py**``
-
-**-
-
-## 📊 Exemplo de Saída**```text
-Pessoa 1
-
-**LEFONE
-   ** - 11 1234-567**
-EMAIL
-    1 - P**SOA@EMAIL.COM
-    **- EMAIL@PROFISSIONAL.COM
-
-**DERECO
-    1 - R** 123
-
-LINKEDIN
-   ** - LINKEDIN.COM/IN/P**SOA1
-```
+- Persist**cia de dados em JSON
+- Integração**om SQLite
+- Interface gráfica com**kinter
+- API REST com Flask
+- API**EST com Django
+- Sistema de auten**cação
+- Busca inteligente de cont**os
 
 ---
 
-## 📚**prendizados
+## Aprendizados
 
-Durante o**esenvolvimento deste projeto fora**pratic**os os seguintes conceitos:
-
-- Est***uras de Dados em Python
-- Model**em de Informações
-- Manipulação d**Dicionários Aninhados
-- Cr**ção e Organização de Funções
-**Parâmetros Vari**eis (`**kwargs`)
-- Formatação de ****a de Dados
-- Bo** Práticas de Leg**ilidade
+Durante** desenvolvimento deste projeto fo**possível consolidar conhecimentos**m estruturas de dados, modulariza**o de código e manipulação dinâmic**de informações utilizando Python.**Além do aspecto técnico, o projet**contribuiu para o desenvolvimento**a capacidade de modelar problemas**eais e transformá-los em soluções**e software organizadas e reutiliz**eis.
 
 ---
 
-## 🔄**elhorias Futuras
+## Desenvolvedor
 
--**nclusão de novos contatos via**ntrada do usuário
-- E**ção de contatos existentes
-- Excl**ão de**egistros
-- Persistência em arquiv** JSON
-- Integração com banco de d**os
-- Interface**ráfica com Tkinter
-- API**EST utilizando Flask**u Django
+**An**é Filipe dos Santos Reis**
 
----
+Estud**te de Engenharia de Software com **co em Desenvolvimento Back-end, P**hon, Java e Segurança Cibernética**
+**GitHub:** https://github.com/s**drefilipedev
 
-## 👨‍💻**esenvolvedor
-
-**André Filipe dos **ntos Reis**
-
-Est**ante de Engenharia de Software co**foco em Desenvolvimento Back-end,**ython, Java e Segurança Cibernéti**.
-
-GitHub: https://github.com/san**efilipedev
-
-LinkedIn: https://lin**din.com/in/andrefilipedossantosre**
+**LinkedIn:** https**/linkedin.com/in/andrefilipedossa**osreis
 
 ---
 
-⭐ Projeto desenvolvido com** objetivo de consolidar**onhecimentos em Python e estrutur** de dados,**plicando conceitos fundamentais u**lizados no desenvolvimento de sof**are.
+⭐ Este projeto foi d**envolvido com o objetivo de forta**cer fundamentos de desenvolviment**de software e demonstrar a aplica**o prática de estruturas de dados **lógica de programação na construç** de uma solução funcional para ge**nciamento de contatos.
